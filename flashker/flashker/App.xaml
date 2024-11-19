@@ -6,6 +6,29 @@
         Define global resources and styles here, that apply to all pages in your app.
     -->
     <Application.Resources>
+      
+        <!-- Domyślny motyw (Jasny)
+        <ResourceDictionary x:Key="LightTheme">
+            <Color x:Key="BackgroundColor">#FFFFFF</Color>
+            <Color x:Key="TextColor">#000000</Color>
+        </ResourceDictionary>
+
+         Motyw Ciemny
+        <ResourceDictionary x:Key="DarkTheme">
+            <Color x:Key="BackgroundColor">#333333</Color>
+            <Color x:Key="TextColor">#FFFFFF</Color>
+        </ResourceDictionary>
+
+         Motyw AMOLED
+        <ResourceDictionary x:Key="AMOLEDTheme">
+            <Color x:Key="BackgroundColor">#000000</Color>
+            <Color x:Key="TextColor">#FFFFFF</Color>
+        </ResourceDictionary>
+
+         Używane kolory
+        <Color x:Key="BackgroundColor">#FFFFFF</Color>
+        <Color x:Key="TextColor">#000000</Color> -->
+        
         <ResourceDictionary>
             <Color x:Key="Primary">#dba561</Color>
             <Style TargetType="Button">
@@ -15,7 +38,7 @@
                         <VisualStateGroup x:Name="CommonStates">
                             <VisualState x:Name="Normal">
                                 <VisualState.Setters>
-                                    <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+                                    <Setter Property="BackgroundColor" Value="#dba561" />
                                 </VisualState.Setters>
                             </VisualState>
                             <VisualState x:Name="Disabled">

@@ -1,0 +1,55 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="flashker.Views.SettingsPage"
+             Title="Ustawienia">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20" Spacing="15">
+                <!-- Sekcja Zmiana Motywu -->
+                <StackLayout>
+                    <Label Text="Motyw" FontSize="Medium" FontAttributes="Bold" />
+                    <Picker x:Name="ThemePicker" Title="Wybierz motyw">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Jasny</x:String>
+                                <x:String>Ciemny</x:String>
+                                <x:String>AMOLED</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                </StackLayout>
+
+                <BoxView HeightRequest="1" BackgroundColor="#ddd" />
+
+                <!-- Sekcja Ustawienia Powiadomień -->
+                <StackLayout>
+                    <Label Text="Powiadomienia" FontSize="Medium" FontAttributes="Bold" />
+                    <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                        <Switch x:Name="PrivateMessageSwitch" IsToggled="true" />
+                        <Label Text="Wiadomość prywatna" VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                        <Switch x:Name="GroupMessageSwitch" IsToggled="true" />
+                        <Label Text="Wiadomość grupowa" VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                        <Switch x:Name="FriendRequestSwitch" IsToggled="true" />
+                        <Label Text="Zaproszenie do znajomych" VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                        <Switch x:Name="ProfileCommentSwitch" IsToggled="true" />
+                        <Label Text="Komentarz na profilu" VerticalOptions="Center" />
+                    </StackLayout>
+                </StackLayout>
+
+                <BoxView HeightRequest="1" BackgroundColor="#ddd" />
+
+                <!-- Sekcja Zarządzanie Kontem -->
+                <StackLayout>
+                    <Label Text="Konto" FontSize="Medium" FontAttributes="Bold" />
+                 <!--   <Button Text="Zarządzaj kontem" Clicked="OnManageAccountClicked" /> -->
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

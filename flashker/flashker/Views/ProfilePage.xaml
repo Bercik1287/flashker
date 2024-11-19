@@ -4,18 +4,19 @@
              Title="Profil Użytkownika">
 
     <ContentPage.Content>
-        <StackLayout Padding="20" Spacing="15">
+        <StackLayout Padding="20" Spacing="15" >
 
             <!-- Zdjęcie profilowe użytkownika -->
             <Frame WidthRequest="150" HeightRequest="150" CornerRadius="75" HorizontalOptions="Center" HasShadow="true">
-                <Image x:Name="ProfileImage" Aspect="AspectFill" WidthRequest="150" HeightRequest="150"/>
+                <Image Source="xamarin_logo.png" Aspect="AspectFill" WidthRequest="150" HeightRequest="150"/>
             </Frame>
 
             <!-- Nazwa użytkownika -->
-            <Label x:Name="UserNameLabel" 
+            <Label Text="Nasus Farmer" 
                    FontSize="Large" 
                    FontAttributes="Bold" 
-                   HorizontalOptions="Center" />
+                   HorizontalOptions="Center"
+                   TextColor="black"/>
 
             <!-- Przyciski do akcji -->
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
@@ -29,35 +30,39 @@
 
             <!-- Informacje użytkownika -->
             <StackLayout Padding="10" Spacing="10">
+
                 <Label Text="Informacje kontaktowe" 
                        FontSize="Medium" 
-                       FontAttributes="Bold" />
+                       FontAttributes="Bold" 
+                       TextColor="black"/>
 
                 <!-- Email -->
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="Email:" WidthRequest="100" FontAttributes="Bold" />
-                    <Label x:Name="EmailLabel" />
+                    <Label Text="Email:" WidthRequest="100" FontAttributes="Bold" TextColor="black"/>
+                    <Label Text="nasus.shurima@summonersrift.com" TextColor="black"/>
                 </StackLayout>
 
                 <!-- Telefon -->
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="Telefon:" WidthRequest="100" FontAttributes="Bold" />
-                    <Label x:Name="PhoneLabel" />
+                    <Label Text="Telefon:" WidthRequest="100" FontAttributes="Bold" TextColor="black"/>
+                    <Label Text="+48 123 456 789" TextColor="black"/>
                 </StackLayout>
 
                 <!-- Lokacja -->
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="Lokalizacja:" WidthRequest="100" FontAttributes="Bold" />
-                    <Label x:Name="LocationLabel" />
+                    <Label Text="Lokalizacja:" WidthRequest="100" FontAttributes="Bold" TextColor="black"/>
+                    <Label Text="Warszawa, Polska" TextColor="black"/>
                 </StackLayout>
+
             </StackLayout>
 
             <!-- Opis użytkownika -->
             <StackLayout Padding="10">
                 <Label Text="O mnie" 
                        FontSize="Medium" 
-                       FontAttributes="Bold" />
-                <Label x:Name="AboutLabel" 
+                       FontAttributes="Bold" 
+                       TextColor="black"/>
+                <Label Text="Krótki opis o sobie. Może to być cokolwiek, co użytkownik chce podzielić z innymi." 
                        FontSize="Small" 
                        TextColor="Gray" />
             </StackLayout>
