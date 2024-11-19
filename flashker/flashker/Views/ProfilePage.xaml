@@ -7,9 +7,25 @@
         <StackLayout Padding="20" Spacing="15" >
 
             <!-- Zdjęcie profilowe użytkownika -->
-            <Frame WidthRequest="150" HeightRequest="150" CornerRadius="75" HorizontalOptions="Center" HasShadow="true">
-                <Image Source="xamarin_logo.png" Aspect="AspectFill" WidthRequest="150" HeightRequest="150"/>
-            </Frame>
+            <Grid VerticalOptions="Center" HorizontalOptions="Center">
+                <!-- Ramka -->
+                <Frame
+            WidthRequest="150"
+            HeightRequest="150"
+            CornerRadius="20"
+            BorderColor="Gray"
+            HasShadow="True"
+            Padding="0"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            BackgroundColor="White">
+
+                    <!-- Obraz wewnątrz ramki -->
+                    <Image
+                Source="avatar3.png"
+                Aspect="AspectFill" />
+                </Frame>
+            </Grid>
 
             <!-- Nazwa użytkownika -->
             <Label Text="Nasus Farmer" 
@@ -51,7 +67,7 @@
                 <!-- Lokacja -->
                 <StackLayout Orientation="Horizontal">
                     <Label Text="Lokalizacja:" WidthRequest="100" FontAttributes="Bold" TextColor="black"/>
-                    <Label Text="Warszawa, Polska" TextColor="black"/>
+                    <Label Text="Top Lane, Summoners Rift" TextColor="black"/>
                 </StackLayout>
 
             </StackLayout>
@@ -62,7 +78,7 @@
                        FontSize="Medium" 
                        FontAttributes="Bold" 
                        TextColor="black"/>
-                <Label Text="Krótki opis o sobie. Może to być cokolwiek, co użytkownik chce podzielić z innymi." 
+                <Label Text="I myyyyk toporkiem w canona." 
                        FontSize="Small" 
                        TextColor="Gray" />
             </StackLayout>

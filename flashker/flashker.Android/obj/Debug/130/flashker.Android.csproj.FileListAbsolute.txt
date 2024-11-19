@@ -683,3 +683,7 @@ D:\amir\flashker\flashker\flashker.Android\obj\Debug\130\stamp\_ConvertResources
 D:\amir\flashker\flashker\flashker.Android\obj\Debug\130\stamp\_GenerateJavaStubs.stamp
 D:\amir\flashker\flashker\flashker.Android\obj\Debug\130\stamp\_GeneratePackageManagerJava.stamp
 D:\amir\flashker\flashker\flashker.Android\obj\Debug\130\stamp\_ResolveLibraryProjectImports.stamp
+D:\amir\flashker\flashker\flashker.Android\obj\Debug\130\res\drawable\avatar4.png
+D:\amir\flashker\flashker\flashker.Android\obj\Debug\130\res\drawable\avatar1.jpg
+D:\amir\flashker\flashker\flashker.Android\obj\Debug\130\res\drawable\avatar2.png
+D:\amir\flashker\flashker\flashker.Android\obj\Debug\130\res\drawable\avatar3.png

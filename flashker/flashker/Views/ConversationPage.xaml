@@ -8,10 +8,22 @@
             <CollectionView x:Name="ConversationsList" SelectionMode="Single" SelectionChanged="OnConversationSelected">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <StackLayout Padding="10" Orientation="Horizontal" BackgroundColor="#f5f5f5" Margin="0,5,0,5" >
-                            <Image Source="{Binding UserAvatar}" WidthRequest="50" HeightRequest="50" Aspect="AspectFill"/>
+                        <StackLayout Padding="5" Orientation="Horizontal" BackgroundColor="#f5f5f5" Margin="0,0,0,0" >
+                            <Frame
+                                WidthRequest="70"
+                                HeightRequest="70"
+                                CornerRadius="20"
+                                HasShadow="True"
+                                Padding="0"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                BackgroundColor="White">
+
+                                <Image Source="{Binding UserAvatar}" WidthRequest="70" HeightRequest="70"  Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            </Frame>
+                            
                             <StackLayout Padding="10,0">
-                                <Label Text="{Binding UserName}" FontSize="Medium" FontAttributes="Bold" />
+                                <Label Text="{Binding UserName}" FontSize="Medium" FontAttributes="Bold" TextColor="#3F3F3F"/>
                                 <Label Text="{Binding LastMessage}" FontSize="Small" TextColor="Gray" LineBreakMode="TailTruncation" />
                             </StackLayout>
                         </StackLayout>

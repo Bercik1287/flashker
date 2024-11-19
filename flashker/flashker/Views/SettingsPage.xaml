@@ -7,8 +7,8 @@
             <StackLayout Padding="20" Spacing="15">
                 <!-- Sekcja Zmiana Motywu -->
                 <StackLayout>
-                    <Label Text="Motyw" FontSize="Medium" FontAttributes="Bold" />
-                    <Picker x:Name="ThemePicker" Title="Wybierz motyw">
+                    <Label Text="Motyw" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
+                    <Picker x:Name="ThemePicker" Title="Wybierz motyw" TextColor="black">
                         <Picker.ItemsSource>
                             <x:Array Type="{x:Type x:String}">
                                 <x:String>Jasny</x:String>
@@ -23,22 +23,22 @@
 
                 <!-- Sekcja Ustawienia Powiadomień -->
                 <StackLayout>
-                    <Label Text="Powiadomienia" FontSize="Medium" FontAttributes="Bold" />
+                    <Label Text="Powiadomienia" FontSize="Medium" FontAttributes="Bold" TextColor="Black" />
                     <StackLayout Orientation="Horizontal" VerticalOptions="Center">
                         <Switch x:Name="PrivateMessageSwitch" IsToggled="true" />
-                        <Label Text="Wiadomość prywatna" VerticalOptions="Center" />
+                        <Label Text="Wiadomość prywatna" VerticalOptions="Center" TextColor="Black"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal" VerticalOptions="Center">
                         <Switch x:Name="GroupMessageSwitch" IsToggled="true" />
-                        <Label Text="Wiadomość grupowa" VerticalOptions="Center" />
+                        <Label Text="Wiadomość grupowa" VerticalOptions="Center" TextColor="Black"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal" VerticalOptions="Center">
                         <Switch x:Name="FriendRequestSwitch" IsToggled="true" />
-                        <Label Text="Zaproszenie do znajomych" VerticalOptions="Center" />
+                        <Label Text="Zaproszenie do znajomych" VerticalOptions="Center" TextColor="Black"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal" VerticalOptions="Center">
                         <Switch x:Name="ProfileCommentSwitch" IsToggled="true" />
-                        <Label Text="Komentarz na profilu" VerticalOptions="Center" />
+                        <Label Text="Komentarz na profilu" VerticalOptions="Center" TextColor="Black"/>
                     </StackLayout>
                 </StackLayout>
 
@@ -46,7 +46,7 @@
 
                 <!-- Sekcja Zarządzanie Kontem -->
                 <StackLayout>
-                    <Label Text="Konto" FontSize="Medium" FontAttributes="Bold" />
+                    <Label Text="Konto" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
                  <!--   <Button Text="Zarządzaj kontem" Clicked="OnManageAccountClicked" /> -->
                 </StackLayout>
             </StackLayout>

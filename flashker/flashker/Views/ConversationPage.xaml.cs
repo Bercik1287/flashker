@@ -21,7 +21,7 @@ namespace flashker.Views
             {
                 new ConversationPreview { UserName = "Jan Kowalski", UserAvatar = "avatar1.jpg", LastMessage = "Cześć! Jak się masz?" },
                 new ConversationPreview { UserName = "Anna Nowak", UserAvatar = "avatar2.png", LastMessage = "O której się widzimy?" },
-                new ConversationPreview { UserName = "Piotr Wiśniewski", UserAvatar = "avatar3.png", LastMessage = "Dzięki za pomoc!" }
+                new ConversationPreview { UserName = "Piotr Wiśniewski", UserAvatar = "avatar4.png", LastMessage = "Dzięki za pomoc!" }
             };
 
             // Powiązanie danych z widokiem
