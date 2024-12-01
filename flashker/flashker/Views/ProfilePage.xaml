@@ -1,8 +1,13 @@
 ﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:flashker.ViewModels"
              x:Class="flashker.Views.ProfilePage"
              Title="Profil Użytkownika">
 
+    <ContentPage.BindingContext>
+        <vm:ProfileViewModel />
+    </ContentPage.BindingContext>
+    
     <ContentPage.Content>
         <StackLayout Padding="20" Spacing="15" >
 
@@ -22,65 +27,33 @@
 
                     <!-- Obraz wewnątrz ramki -->
                     <Image
-                Source="avatar3.png"
+                Source="{Binding User.ProfilePicture}"
                 Aspect="AspectFill" />
                 </Frame>
             </Grid>
 
             <!-- Nazwa użytkownika -->
-            <Label Text="Nasus Farmer" 
-                   FontSize="Large" 
-                   FontAttributes="Bold" 
-                   HorizontalOptions="Center"
-                   TextColor="black"/>
-
-            <!-- Przyciski do akcji -->
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Button Text="Edytuj Profil" 
-                        FontAttributes="Bold" 
-                        BackgroundColor="#3498db" 
-                        TextColor="White" 
-                        WidthRequest="120"
-                        Margin="5"/>
-            </StackLayout>
-
-            <!-- Informacje użytkownika -->
-            <StackLayout Padding="10" Spacing="10">
-
-                <Label Text="Informacje kontaktowe" 
-                       FontSize="Medium" 
+            <Label Text="{Binding User.FullName}" 
+                       FontSize="Large" 
                        FontAttributes="Bold" 
-                       TextColor="black"/>
+                       HorizontalOptions="Center" />
 
-                <!-- Email -->
-                <StackLayout Orientation="Horizontal">
-                    <Label Text="Email:" WidthRequest="100" FontAttributes="Bold" TextColor="black"/>
-                    <Label Text="nasus.shurima@summonersrift.com" TextColor="black"/>
-                </StackLayout>
+            <!-- Informacje kontaktowe -->
+            <StackLayout Padding="10" Spacing="10">
+                <Label Text="Email:" FontAttributes="Bold" />
+                <Label Text="{Binding User.Email}" />
 
-                <!-- Telefon -->
-                <StackLayout Orientation="Horizontal">
-                    <Label Text="Telefon:" WidthRequest="100" FontAttributes="Bold" TextColor="black"/>
-                    <Label Text="+48 123 456 789" TextColor="black"/>
-                </StackLayout>
+                <Label Text="Telefon:" FontAttributes="Bold" />
+                <Label Text="{Binding User.PhoneNumber}" />
 
-                <!-- Lokacja -->
-                <StackLayout Orientation="Horizontal">
-                    <Label Text="Lokalizacja:" WidthRequest="100" FontAttributes="Bold" TextColor="black"/>
-                    <Label Text="Top Lane, Summoners Rift" TextColor="black"/>
-                </StackLayout>
-
+                <Label Text="Lokalizacja:" FontAttributes="Bold" />
+                <Label Text="{Binding User.Location}" />
             </StackLayout>
 
             <!-- Opis użytkownika -->
             <StackLayout Padding="10">
-                <Label Text="O mnie" 
-                       FontSize="Medium" 
-                       FontAttributes="Bold" 
-                       TextColor="black"/>
-                <Label Text="I myyyyk toporkiem w canona." 
-                       FontSize="Small" 
-                       TextColor="Gray" />
+                <Label Text="O mnie" FontSize="Medium" FontAttributes="Bold" />
+                <Label Text="{Binding User.AboutMe}" FontSize="Small" TextColor="Gray" />
             </StackLayout>
 
         </StackLayout>

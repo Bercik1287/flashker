@@ -3,6 +3,7 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "flashker.Android.dll" comes first in this list. */
 		"flashker.Android.dll",
+		"BouncyCastle.Cryptography.dll",
 		"Firebase.Auth.dll",
 		"flashker.dll",
 		"FormsViewGroup.dll",
@@ -21,15 +22,27 @@ public class MonoPackageManager_Resources {
 		"Grpc.Core.Api.dll",
 		"Grpc.Net.Client.dll",
 		"Grpc.Net.Common.dll",
+		"K4os.Compression.LZ4.dll",
+		"K4os.Compression.LZ4.Streams.dll",
+		"K4os.Hash.xxHash.dll",
 		"Microsoft.Bcl.AsyncInterfaces.dll",
 		"Microsoft.Extensions.DependencyInjection.Abstractions.dll",
 		"Microsoft.Extensions.Logging.Abstractions.dll",
+		"MySql.Data.dll",
 		"Newtonsoft.Json.dll",
 		"System.CodeDom.dll",
 		"System.Collections.Immutable.dll",
+		"System.Configuration.ConfigurationManager.dll",
 		"System.Diagnostics.DiagnosticSource.dll",
+		"System.IO.Pipelines.dll",
 		"System.Linq.Async.dll",
 		"System.Management.dll",
+		"System.Runtime.Loader.dll",
+		"System.Security.AccessControl.dll",
+		"System.Security.Permissions.dll",
+		"System.Security.Principal.Windows.dll",
+		"System.Text.Encodings.Web.dll",
+		"System.Text.Json.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.Annotation.Experimental.dll",
@@ -89,6 +102,7 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Forms.Xaml.dll",
 		"Xamarin.Google.Android.Material.dll",
 		"Xamarin.Google.Guava.ListenableFuture.dll",
+		"ZstdSharp.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("flashker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a0f247c4161e8ab5b56e056ac371c644727fccd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58dbd290ee9be3e9c63cd718c7685df65a998a0c")]
 [assembly: System.Reflection.AssemblyProductAttribute("flashker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("flashker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
