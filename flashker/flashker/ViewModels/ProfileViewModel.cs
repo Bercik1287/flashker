@@ -10,7 +10,7 @@ namespace flashker.ViewModels
     {
         public ProfileViewModel()
         {
-            // Domyślny konstruktor, zainicjuj tutaj wartości, jeśli potrzebujesz
+            // Domyślny konstruktor
         }
 
         private User _user;
