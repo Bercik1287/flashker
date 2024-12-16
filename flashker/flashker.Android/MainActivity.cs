@@ -7,6 +7,8 @@ using Android.OS;
 using Android.Hardware;
 using Xamarin.Essentials;
 
+using flashker;
+
 namespace flashker.Droid
 {
     [Activity(Label = "flashker", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize )]
@@ -16,6 +18,7 @@ namespace flashker.Droid
         {
             base.OnCreate(savedInstanceState);
 
+            Xamarin.FormsMaps.Init(this, savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
@@ -76,7 +79,7 @@ namespace BrightnessAdjuster
         {
             var window = Window;
             var attributes = window.Attributes;
-            attributes.ScreenBrightness = lightLevel / 10000f; // Normalizacja wartości jasności
+            attributes.ScreenBrightness = lightLevel / 100f; // Normalizacja wartości jasności
             window.Attributes = attributes;
         }
     }

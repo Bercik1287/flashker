@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "AdA3d81Nl+E=",
+  "dgSpecHash": "zUIIFWqytBw=",
   "success": true,
   "projectFilePath": "D:\\amir\\flashker\\flashker\\flashker\\flashker.csproj",
   "expectedPackageFiles": [
@@ -60,6 +60,7 @@
     "C:\\Users\\ShiroKitsu\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\ShiroKitsu\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
     "C:\\Users\\ShiroKitsu\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512",
+    "C:\\Users\\ShiroKitsu\\.nuget\\packages\\xamarin.forms.maps\\5.0.0.2196\\xamarin.forms.maps.5.0.0.2196.nupkg.sha512",
     "C:\\Users\\ShiroKitsu\\.nuget\\packages\\zstdsharp.port\\0.8.0\\zstdsharp.port.0.8.0.nupkg.sha512"
   ],
   "logs": [
