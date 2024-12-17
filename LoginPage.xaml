@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="flashker.Views.LoginPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#F8F8F8">
+
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15" VerticalOptions="CenterAndExpand">
+
+            <!-- Tytuł strony -->
+            <Label Text="Logowanie" 
+                   FontSize="32" 
+                   FontAttributes="Bold" 
+                   TextColor="#333333" 
+                   HorizontalOptions="Center" />
+
+            <!-- Pole do wpisania Login -->
+            <Frame BorderColor="#dba561" BackgroundColor="White" CornerRadius="10" Padding="10" HasShadow="True">
+                <Entry Text="{Binding Text, Mode=TwoWay}" 
+                       FontSize="Medium" 
+                       TextColor="Black" 
+                       Placeholder="Email" 
+                       PlaceholderColor="#d0d0d0" />
+            </Frame>
+
+            <!-- Pole do wpisania Hasła -->
+            <Frame BorderColor="#dba561" BackgroundColor="White" CornerRadius="10" Padding="10" HasShadow="True">
+                <Editor Text="{Binding Description, Mode=TwoWay}" 
+                        AutoSize="TextChanges" 
+                        FontSize="Medium" 
+                        TextColor="Black" 
+                        Placeholder="Hasło" 
+                        PlaceholderColor="#d0d0d0" />
+            </Frame>
+
+            <!-- Przycisk Zaloguj się -->
+            <Button Text="Zaloguj się" 
+                    Command="{Binding LoginCommand}" 
+                    HorizontalOptions="FillAndExpand" 
+                    BackgroundColor="#dba561" 
+                    TextColor="White" 
+                    Padding="15"
+                    CornerRadius="30"
+                    HeightRequest="50"
+                    FontSize="Medium"
+                    Margin="0,20,0,0" />
+
+            <!-- Dodatkowe opcje, jak np. link do rejestracji -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="Nie masz konta?" 
+                       FontSize="Small" 
+                       TextColor="#666666" />
+                <Label Text=" Zarejestruj się"
+                   FontSize="Small" 
+                   TextColor="#dba561">
+                    <Label.GestureRecognizers>
+                        <!-- Gesture recognizer przypisany do RegisterCommand -->
+                        <TapGestureRecognizer Command="{Binding RegisterCommand}" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

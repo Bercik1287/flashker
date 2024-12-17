@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="flashker.Views.RegisterPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#F8F8F8">
+
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15" VerticalOptions="CenterAndExpand">
+
+            <!-- Tytuł strony -->
+            <Label Text="Rejestracja" 
+                   FontSize="32" 
+                   FontAttributes="Bold" 
+                   TextColor="#333333" 
+                   HorizontalOptions="Center" />
+
+            <!-- Pole Imienia -->
+            <Frame BorderColor="#dba561" BackgroundColor="White" CornerRadius="10" Padding="10" HasShadow="True">
+                <Entry Text="{Binding FirstName, Mode=TwoWay}" 
+                       FontSize="Medium" 
+                       TextColor="Black" 
+                       Placeholder="Imię" 
+                       PlaceholderColor="#d0d0d0" />
+            </Frame>
+
+            <!-- Pole Nazwiska -->
+            <Frame BorderColor="#dba561" BackgroundColor="White" CornerRadius="10" Padding="10" HasShadow="True">
+                <Entry Text="{Binding LastName, Mode=TwoWay}" 
+                       FontSize="Medium" 
+                       TextColor="Black" 
+                       Placeholder="Nazwisko" 
+                       PlaceholderColor="#d0d0d0" />
+            </Frame>
+
+            <!-- Pole Email -->
+            <Frame BorderColor="#dba561" BackgroundColor="White" CornerRadius="10" Padding="10" HasShadow="True">
+                <Entry Text="{Binding Email, Mode=TwoWay}" 
+                       FontSize="Medium" 
+                       TextColor="Black" 
+                       Placeholder="Email" 
+                       PlaceholderColor="#d0d0d0" />
+            </Frame>
+
+            <!-- Pole Hasła -->
+            <Frame BorderColor="#dba561" BackgroundColor="White" CornerRadius="10" Padding="10" HasShadow="True">
+                <Editor Text="{Binding Password, Mode=TwoWay}" 
+                        AutoSize="TextChanges" 
+                        FontSize="Medium" 
+                        TextColor="Black" 
+                        Placeholder="Hasło" 
+                        PlaceholderColor="#d0d0d0" />
+            </Frame>
+
+            <!-- Pole Potwierdzenia Hasła -->
+            <Frame BorderColor="#dba561" BackgroundColor="White" CornerRadius="10" Padding="10" HasShadow="True">
+                <Editor Text="{Binding ConfirmPassword, Mode=TwoWay}" 
+                        AutoSize="TextChanges" 
+                        FontSize="Medium" 
+                        TextColor="Black" 
+                        Placeholder="Potwierdź hasło" 
+                        PlaceholderColor="#d0d0d0" />
+            </Frame>
+
+            <!-- Przycisk Rejestracji -->
+            <Button Text="Zarejestruj się" 
+                    Command="{Binding RegisterCommand}" 
+                    HorizontalOptions="FillAndExpand" 
+                    BackgroundColor="#dba561" 
+                    TextColor="White" 
+                    Padding="15"
+                    CornerRadius="30"
+                    HeightRequest="50"
+                    FontSize="Medium"
+                    Margin="0,20,0,0" />
+
+            <!-- Link do strony logowania -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="Masz już konto?" 
+                       FontSize="Small" 
+                       TextColor="#666666" />
+                <Label Text=" Zaloguj się" 
+                       FontSize="Small" 
+                       TextColor="#dba561" 
+                       />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
