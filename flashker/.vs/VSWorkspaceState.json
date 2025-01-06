@@ -3,12 +3,14 @@
     "",
     "\\flashker",
     "\\flashker.Android",
+    "\\flashker.Android\\Properties",
+    "\\flashker.Android\\Resources",
     "\\flashker.iOS",
     "\\flashker\\bin",
     "\\flashker\\obj",
     "\\flashker\\Services",
     "\\flashker\\ViewModels"
   ],
-  "SelectedNode": "\\flashker.Android\\MainActivity.cs",
+  "SelectedNode": "\\flashker.Android\\flashker.Android.csproj",
   "PreviewInSolutionExplorer": false
 }

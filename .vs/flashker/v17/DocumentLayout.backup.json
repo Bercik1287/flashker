@@ -1,98 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\amir\\flashker\\",
+  "WorkspaceRootPath": "C:\\Users\\mqtwo\\Documents\\GitHub\\flashker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|d:\\amir\\flashker\\flashker\\flashker\\views\\conversationpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|solutionrelative:flashker\\flashker\\views\\conversationpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|d:\\amir\\flashker\\flashker\\flashker\\views\\conversationpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
-      "RelativeMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|solutionrelative:flashker\\flashker\\views\\conversationpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|d:\\amir\\flashker\\flashker\\flashker\\views\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|solutionrelative:flashker\\flashker\\views\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|d:\\amir\\flashker\\flashker\\flashker\\views\\profilepage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
-      "RelativeMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|solutionrelative:flashker\\flashker\\views\\profilepage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|d:\\amir\\flashker\\flashker\\flashker\\views\\settingspage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
-      "RelativeMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|solutionrelative:flashker\\flashker\\views\\settingspage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|d:\\amir\\flashker\\flashker\\flashker\\views\\chatpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|solutionrelative:flashker\\flashker\\views\\chatpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|d:\\amir\\flashker\\flashker\\flashker\\views\\chatpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
-      "RelativeMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|solutionrelative:flashker\\flashker\\views\\chatpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A390600A-80ED-4F34-A626-5B04741F9997}|flashker\\flashker.Android\\flashker.Android.csproj|d:\\amir\\flashker\\flashker\\flashker.android\\resources\\drawable\\avatar3.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
-      "RelativeMoniker": "D:0:0:{A390600A-80ED-4F34-A626-5B04741F9997}|flashker\\flashker.Android\\flashker.Android.csproj|solutionrelative:flashker\\flashker.android\\resources\\drawable\\avatar3.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|d:\\amir\\flashker\\flashker\\flashker\\app.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
-      "RelativeMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|solutionrelative:flashker\\flashker\\app.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|d:\\amir\\flashker\\flashker\\flashker\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|solutionrelative:flashker\\flashker\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|d:\\amir\\flashker\\flashker\\flashker\\appshell.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
-      "RelativeMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|solutionrelative:flashker\\flashker\\appshell.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|d:\\amir\\flashker\\flashker\\flashker\\views\\aboutpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
-      "RelativeMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|solutionrelative:flashker\\flashker\\views\\aboutpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|d:\\amir\\flashker\\flashker\\flashker\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|solutionrelative:flashker\\flashker\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|d:\\amir\\flashker\\flashker\\flashker\\flashker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|solutionrelative:flashker\\flashker\\flashker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\amir\\flashker\\flashker\\flashker\\obj\\Debug\\netstandard2.0\\AppShell.xaml.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:flashker\\flashker\\obj\\Debug\\netstandard2.0\\AppShell.xaml.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|d:\\amir\\flashker\\flashker\\flashker\\views\\settingspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|solutionrelative:flashker\\flashker\\views\\settingspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|d:\\amir\\flashker\\flashker\\flashker\\views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|solutionrelative:flashker\\flashker\\views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|d:\\amir\\flashker\\flashker\\flashker\\views\\loginpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
-      "RelativeMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|solutionrelative:flashker\\flashker\\views\\loginpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|d:\\amir\\flashker\\flashker\\flashker\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|solutionrelative:flashker\\flashker\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|d:\\amir\\flashker\\flashker\\flashker\\services\\mockdatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|solutionrelative:flashker\\flashker\\services\\mockdatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|d:\\amir\\flashker\\flashker\\flashker\\services\\idatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|solutionrelative:flashker\\flashker\\services\\idatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|d:\\amir\\flashker\\flashker\\flashker\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|solutionrelative:flashker\\flashker\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|d:\\amir\\flashker\\flashker\\flashker\\viewmodels\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3D12772-B394-439A-8570-1223C347E4F0}|flashker\\flashker\\flashker.csproj|solutionrelative:flashker\\flashker\\viewmodels\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A390600A-80ED-4F34-A626-5B04741F9997}|flashker\\flashker.Android\\flashker.Android.csproj|c:\\users\\mqtwo\\documents\\github\\flashker\\flashker\\flashker.android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A390600A-80ED-4F34-A626-5B04741F9997}|flashker\\flashker.Android\\flashker.Android.csproj|solutionrelative:flashker\\flashker.android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -102,290 +14,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 9,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ConversationPage.xaml",
-              "DocumentMoniker": "D:\\amir\\flashker\\flashker\\flashker\\Views\\ConversationPage.xaml",
-              "RelativeDocumentMoniker": "flashker\\flashker\\Views\\ConversationPage.xaml",
-              "ToolTip": "D:\\amir\\flashker\\flashker\\flashker\\Views\\ConversationPage.xaml*",
-              "RelativeToolTip": "flashker\\flashker\\Views\\ConversationPage.xaml*",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABcAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-19T11:32:40.457Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProfilePage.xaml",
-              "DocumentMoniker": "D:\\amir\\flashker\\flashker\\flashker\\Views\\ProfilePage.xaml",
-              "RelativeDocumentMoniker": "flashker\\flashker\\Views\\ProfilePage.xaml",
-              "ToolTip": "D:\\amir\\flashker\\flashker\\flashker\\Views\\ProfilePage.xaml*",
-              "RelativeToolTip": "flashker\\flashker\\Views\\ProfilePage.xaml*",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAwBgAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-11T16:55:30.318Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProfilePage.xaml.cs",
-              "DocumentMoniker": "D:\\amir\\flashker\\flashker\\flashker\\Views\\ProfilePage.xaml.cs",
-              "RelativeDocumentMoniker": "flashker\\flashker\\Views\\ProfilePage.xaml.cs",
-              "ToolTip": "D:\\amir\\flashker\\flashker\\flashker\\Views\\ProfilePage.xaml.cs",
-              "RelativeToolTip": "flashker\\flashker\\Views\\ProfilePage.xaml.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAwBMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T17:54:07.505Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ChatPage.xaml.cs",
-              "DocumentMoniker": "D:\\amir\\flashker\\flashker\\flashker\\Views\\ChatPage.xaml.cs",
-              "RelativeDocumentMoniker": "flashker\\flashker\\Views\\ChatPage.xaml.cs",
-              "ToolTip": "D:\\amir\\flashker\\flashker\\flashker\\Views\\ChatPage.xaml.cs",
-              "RelativeToolTip": "flashker\\flashker\\Views\\ChatPage.xaml.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAgwDQAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T11:36:16.493Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SettingsPage.xaml",
-              "DocumentMoniker": "D:\\amir\\flashker\\flashker\\flashker\\Views\\SettingsPage.xaml",
-              "RelativeDocumentMoniker": "flashker\\flashker\\Views\\SettingsPage.xaml",
-              "ToolTip": "D:\\amir\\flashker\\flashker\\flashker\\Views\\SettingsPage.xaml*",
-              "RelativeToolTip": "flashker\\flashker\\Views\\SettingsPage.xaml*",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAwDAAAABhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-19T10:26:53.457Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ConversationPage.xaml.cs",
-              "DocumentMoniker": "D:\\amir\\flashker\\flashker\\flashker\\Views\\ConversationPage.xaml.cs",
-              "RelativeDocumentMoniker": "flashker\\flashker\\Views\\ConversationPage.xaml.cs",
-              "ToolTip": "D:\\amir\\flashker\\flashker\\flashker\\Views\\ConversationPage.xaml.cs*",
-              "RelativeToolTip": "flashker\\flashker\\Views\\ConversationPage.xaml.cs*",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBkAAAAAAAAAAAAAAA==",
+              "Title": "MainActivity.cs",
+              "DocumentMoniker": "C:\\Users\\mqtwo\\Documents\\GitHub\\flashker\\flashker\\flashker.Android\\MainActivity.cs",
+              "RelativeDocumentMoniker": "flashker\\flashker.Android\\MainActivity.cs",
+              "ToolTip": "C:\\Users\\mqtwo\\Documents\\GitHub\\flashker\\flashker\\flashker.Android\\MainActivity.cs",
+              "RelativeToolTip": "flashker\\flashker.Android\\MainActivity.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAAAG4AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T11:33:03.81Z",
+              "WhenOpened": "2025-01-06T18:13:53.181Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ChatPage.xaml",
-              "DocumentMoniker": "D:\\amir\\flashker\\flashker\\flashker\\Views\\ChatPage.xaml",
-              "RelativeDocumentMoniker": "flashker\\flashker\\Views\\ChatPage.xaml",
-              "ToolTip": "D:\\amir\\flashker\\flashker\\flashker\\Views\\ChatPage.xaml",
-              "RelativeToolTip": "flashker\\flashker\\Views\\ChatPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-19T11:35:56.431Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "D:\\amir\\flashker\\flashker\\flashker\\App.xaml.cs",
-              "RelativeDocumentMoniker": "flashker\\flashker\\App.xaml.cs",
-              "ToolTip": "D:\\amir\\flashker\\flashker\\flashker\\App.xaml.cs",
-              "RelativeToolTip": "flashker\\flashker\\App.xaml.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAwAsAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T10:53:58.294Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AppShell.xaml.cs",
-              "DocumentMoniker": "D:\\amir\\flashker\\flashker\\flashker\\AppShell.xaml.cs",
-              "RelativeDocumentMoniker": "flashker\\flashker\\AppShell.xaml.cs",
-              "ToolTip": "D:\\amir\\flashker\\flashker\\flashker\\AppShell.xaml.cs",
-              "RelativeToolTip": "flashker\\flashker\\AppShell.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T16:10:27.926Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AboutPage.xaml",
-              "DocumentMoniker": "D:\\amir\\flashker\\flashker\\flashker\\Views\\AboutPage.xaml",
-              "RelativeDocumentMoniker": "flashker\\flashker\\Views\\AboutPage.xaml",
-              "ToolTip": "D:\\amir\\flashker\\flashker\\flashker\\Views\\AboutPage.xaml",
-              "RelativeToolTip": "flashker\\flashker\\Views\\AboutPage.xaml",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAABoAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-19T11:50:22.875Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "avatar3.png",
-              "DocumentMoniker": "D:\\amir\\flashker\\flashker\\flashker.Android\\Resources\\drawable\\avatar3.png",
-              "RelativeDocumentMoniker": "flashker\\flashker.Android\\Resources\\drawable\\avatar3.png",
-              "ToolTip": "D:\\amir\\flashker\\flashker\\flashker.Android\\Resources\\drawable\\avatar3.png",
-              "RelativeToolTip": "flashker\\flashker.Android\\Resources\\drawable\\avatar3.png",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2024-11-19T20:31:46.537Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "App.xaml",
-              "DocumentMoniker": "D:\\amir\\flashker\\flashker\\flashker\\App.xaml",
-              "RelativeDocumentMoniker": "flashker\\flashker\\App.xaml",
-              "ToolTip": "D:\\amir\\flashker\\flashker\\flashker\\App.xaml",
-              "RelativeToolTip": "flashker\\flashker\\App.xaml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-11T19:25:34.027Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AppShell.xaml.g.cs",
-              "DocumentMoniker": "D:\\amir\\flashker\\flashker\\flashker\\obj\\Debug\\netstandard2.0\\AppShell.xaml.g.cs",
-              "RelativeDocumentMoniker": "flashker\\flashker\\obj\\Debug\\netstandard2.0\\AppShell.xaml.g.cs",
-              "ToolTip": "D:\\amir\\flashker\\flashker\\flashker\\obj\\Debug\\netstandard2.0\\AppShell.xaml.g.cs",
-              "RelativeToolTip": "flashker\\flashker\\obj\\Debug\\netstandard2.0\\AppShell.xaml.g.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAjwBUAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T10:57:12.156Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AppShell.xaml",
-              "DocumentMoniker": "D:\\amir\\flashker\\flashker\\flashker\\AppShell.xaml",
-              "RelativeDocumentMoniker": "flashker\\flashker\\AppShell.xaml",
-              "ToolTip": "D:\\amir\\flashker\\flashker\\flashker\\AppShell.xaml",
-              "RelativeToolTip": "flashker\\flashker\\AppShell.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-11T19:23:36.155Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "SettingsPage.xaml.cs",
-              "DocumentMoniker": "D:\\amir\\flashker\\flashker\\flashker\\Views\\SettingsPage.xaml.cs",
-              "RelativeDocumentMoniker": "flashker\\flashker\\Views\\SettingsPage.xaml.cs",
-              "ToolTip": "D:\\amir\\flashker\\flashker\\flashker\\Views\\SettingsPage.xaml.cs",
-              "RelativeToolTip": "flashker\\flashker\\Views\\SettingsPage.xaml.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAiwBEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T10:27:54.769Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "flashker.csproj",
-              "DocumentMoniker": "D:\\amir\\flashker\\flashker\\flashker\\flashker.csproj",
-              "RelativeDocumentMoniker": "flashker\\flashker\\flashker.csproj",
-              "ToolTip": "D:\\amir\\flashker\\flashker\\flashker\\flashker.csproj",
-              "RelativeToolTip": "flashker\\flashker\\flashker.csproj",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-18T14:55:29.498Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Item.cs",
-              "DocumentMoniker": "D:\\amir\\flashker\\flashker\\flashker\\Models\\Item.cs",
-              "RelativeDocumentMoniker": "flashker\\flashker\\Models\\Item.cs",
-              "ToolTip": "D:\\amir\\flashker\\flashker\\flashker\\Models\\Item.cs",
-              "RelativeToolTip": "flashker\\flashker\\Models\\Item.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T19:27:47.873Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "LoginPage.xaml",
-              "DocumentMoniker": "D:\\amir\\flashker\\flashker\\flashker\\Views\\LoginPage.xaml",
-              "RelativeDocumentMoniker": "flashker\\flashker\\Views\\LoginPage.xaml",
-              "ToolTip": "D:\\amir\\flashker\\flashker\\flashker\\Views\\LoginPage.xaml",
-              "RelativeToolTip": "flashker\\flashker\\Views\\LoginPage.xaml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-11T19:20:16.477Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "LoginPage.xaml.cs",
-              "DocumentMoniker": "D:\\amir\\flashker\\flashker\\flashker\\Views\\LoginPage.xaml.cs",
-              "RelativeDocumentMoniker": "flashker\\flashker\\Views\\LoginPage.xaml.cs",
-              "ToolTip": "D:\\amir\\flashker\\flashker\\flashker\\Views\\LoginPage.xaml.cs",
-              "RelativeToolTip": "flashker\\flashker\\Views\\LoginPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T10:36:09.24Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IDataStore.cs",
-              "DocumentMoniker": "D:\\amir\\flashker\\flashker\\flashker\\Services\\IDataStore.cs",
-              "RelativeDocumentMoniker": "flashker\\flashker\\Services\\IDataStore.cs",
-              "ToolTip": "D:\\amir\\flashker\\flashker\\flashker\\Services\\IDataStore.cs",
-              "RelativeToolTip": "flashker\\flashker\\Services\\IDataStore.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T19:27:51.386Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "MockDataStore.cs",
-              "DocumentMoniker": "D:\\amir\\flashker\\flashker\\flashker\\Services\\MockDataStore.cs",
-              "RelativeDocumentMoniker": "flashker\\flashker\\Services\\MockDataStore.cs",
-              "ToolTip": "D:\\amir\\flashker\\flashker\\flashker\\Services\\MockDataStore.cs",
-              "RelativeToolTip": "flashker\\flashker\\Services\\MockDataStore.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T19:27:55.545Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "D:\\amir\\flashker\\flashker\\flashker\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "flashker\\flashker\\AssemblyInfo.cs",
-              "ToolTip": "D:\\amir\\flashker\\flashker\\flashker\\AssemblyInfo.cs",
-              "RelativeToolTip": "flashker\\flashker\\AssemblyInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T19:28:10.762Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ProfileViewModel.cs",
-              "DocumentMoniker": "D:\\amir\\flashker\\flashker\\flashker\\ViewModels\\ProfileViewModel.cs",
-              "RelativeDocumentMoniker": "flashker\\flashker\\ViewModels\\ProfileViewModel.cs",
-              "ToolTip": "D:\\amir\\flashker\\flashker\\flashker\\ViewModels\\ProfileViewModel.cs",
-              "RelativeToolTip": "flashker\\flashker\\ViewModels\\ProfileViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T16:55:42.838Z"
             }
           ]
         }

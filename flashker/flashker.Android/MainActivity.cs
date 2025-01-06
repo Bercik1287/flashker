@@ -1,83 +1,98 @@
 ﻿using System;
-
 using Android.App;
+using Android.Content;
 using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
-using Android.Hardware;
-using Xamarin.Essentials;
+using Android.Provider;
+using Xamarin.Forms;
 
 namespace flashker.Droid
 {
-    [Activity(Label = "flashker", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize )]
+    [Activity(Label = "flashker", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
+        static readonly int PickImageId = 1000;
+        static readonly int TakePhotoId = 1001;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
-        }
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
-        {
-            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 
-            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-        }
-    }
-}
-namespace BrightnessAdjuster
-{
-    [Activity(Label = "BrightnessAdjuster", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity, ISensorEventListener
-    {
-        SensorManager sensorManager;
-        Sensor lightSensor;
-
-        protected override void OnCreate(Bundle savedInstanceState)
-        {
-            base.OnCreate(savedInstanceState);
-            global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            LoadApplication(new App());
-
-            sensorManager = (SensorManager)GetSystemService(SensorService);
-            lightSensor = sensorManager.GetDefaultSensor(SensorType.Light);
-        }
-
-        protected override void OnResume()
-        {
-            base.OnResume();
-            sensorManager.RegisterListener(this, lightSensor, SensorDelay.Normal);
-        }
-
-        protected override void OnPause()
-        {
-            base.OnPause();
-            sensorManager.UnregisterListener(this);
-        }
-
-        public void OnAccuracyChanged(Sensor sensor, [GeneratedEnum] SensorStatus accuracy)
-        {
-            // Nie używane
-        }
-
-        public void OnSensorChanged(SensorEvent e)
-        {
-            if (e.Sensor.Type == SensorType.Light)
+            RequestPermissions(new[]
             {
-                float lightLevel = e.Values[0];
-                AdjustScreenBrightness(lightLevel);
+                Android.Manifest.Permission.Camera,
+                Android.Manifest.Permission.ReadExternalStorage,
+                Android.Manifest.Permission.WriteExternalStorage
+            }, 0);
+        }
+
+        public void PickImageFromGallery()
+        {
+            Intent intent = new Intent();
+            intent.SetType("image/*");
+            intent.SetAction(Intent.ActionGetContent);
+            StartActivityForResult(Intent.CreateChooser(intent, "Select Picture"), PickImageId);
+        }
+
+        public void TakePhoto()
+        {
+            Intent intent = new Intent(MediaStore.ActionImageCapture);
+            StartActivityForResult(intent, TakePhotoId);
+        }
+
+        protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
+        {
+            base.OnActivityResult(requestCode, resultCode, data);
+
+            if (resultCode == Result.Ok)
+            {
+                if (requestCode == PickImageId && data?.Data != null)
+                {
+                    var imageUri = data.Data;
+                    SendImageMessage(imageUri.ToString());
+                }
+                else if (requestCode == TakePhotoId && data?.Extras != null)
+                {
+                    var bitmap = data.Extras.Get("data") as Android.Graphics.Bitmap;
+                    if (bitmap != null)
+                    {
+                        string imagePath = SaveBitmapToFile(bitmap);
+                        SendImageMessage(imagePath);
+                    }
+                }
             }
         }
 
-        private void AdjustScreenBrightness(float lightLevel)
+        private string SaveBitmapToFile(Android.Graphics.Bitmap bitmap)
         {
-            var window = Window;
-            var attributes = window.Attributes;
-            attributes.ScreenBrightness = lightLevel / 10000f; // Normalizacja wartości jasności
-            window.Attributes = attributes;
+            string filePath = System.IO.Path.Combine(
+                System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal),
+                "photo.jpg");
+
+            using (var stream = new System.IO.FileStream(filePath, System.IO.FileMode.Create))
+            {
+                bitmap.Compress(Android.Graphics.Bitmap.CompressFormat.Jpeg, 100, stream);
+            }
+            return filePath;
+        }
+
+        private void SendImageMessage(string imagePath)
+        {
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                if (requestCode == PickImageId)
+                {
+                    MessagingCenter.Send(this, "ImagePicked", imagePath);
+                }
+                else if (requestCode == TakePhotoId)
+                {
+                    MessagingCenter.Send(this, "PhotoTaken", imagePath);
+                }
+            });
         }
     }
-}
+}}

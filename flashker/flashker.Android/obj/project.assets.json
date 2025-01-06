@@ -4594,25 +4594,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ShiroKitsu\\.nuget\\packages\\": {},
+    "C:\\Users\\mqtwo\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\amir\\flashker\\flashker\\flashker.Android\\flashker.Android.csproj",
+      "projectUniqueName": "C:\\Users\\mqtwo\\Documents\\GitHub\\flashker\\flashker\\flashker.Android\\flashker.Android.csproj",
       "projectName": "flashker.Android",
-      "projectPath": "D:\\amir\\flashker\\flashker\\flashker.Android\\flashker.Android.csproj",
-      "packagesPath": "C:\\Users\\ShiroKitsu\\.nuget\\packages\\",
-      "outputPath": "D:\\amir\\flashker\\flashker\\flashker.Android\\obj\\",
+      "projectPath": "C:\\Users\\mqtwo\\Documents\\GitHub\\flashker\\flashker\\flashker.Android\\flashker.Android.csproj",
+      "packagesPath": "C:\\Users\\mqtwo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mqtwo\\Documents\\GitHub\\flashker\\flashker\\flashker.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "UsingMicrosoftNETSdk": false,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ShiroKitsu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mqtwo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4626,8 +4625,8 @@
       "frameworks": {
         "monoandroid13.0": {
           "projectReferences": {
-            "D:\\amir\\flashker\\flashker\\flashker\\flashker.csproj": {
-              "projectPath": "D:\\amir\\flashker\\flashker\\flashker\\flashker.csproj"
+            "C:\\Users\\mqtwo\\Documents\\GitHub\\flashker\\flashker\\flashker\\flashker.csproj": {
+              "projectPath": "C:\\Users\\mqtwo\\Documents\\GitHub\\flashker\\flashker\\flashker\\flashker.csproj"
             }
           }
         }
@@ -4635,7 +4634,7 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
+        "auditMode": "direct"
       }
     },
     "frameworks": {
