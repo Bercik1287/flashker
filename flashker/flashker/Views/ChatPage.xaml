@@ -1,17 +1,59 @@
-﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="flashker.Views.ChatPage"
              Title="{Binding UserName}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="UserMessageBackgroundColor">#F4A300</Color>
+            <!-- Ciemnoszary dla wiadomości użytkownika -->
+            <Color x:Key="OtherMessageBackgroundColor">#F4A300</Color>
+            <!-- Pszeniczny kolor dla wiadomości innych osób -->
+            <Color x:Key="EntryBackgroundColor">#f5f5f5</Color>
+            <!-- Jasnoszary tło dla pola tekstowego -->
+            <Color x:Key="EntryTextColor">#F4A300</Color>
+            <!-- Kolor tekstu w polu -->
+
+            <Style x:Key="MessageLabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontSize" Value="Medium" />
+            </Style>
+
+            <Style x:Key="MessageFrameStyle" TargetType="Frame">
+                <Setter Property="HasShadow" Value="True" />
+                <Setter Property="Padding" Value="10" />
+                <Setter Property="CornerRadius" Value="60" />
+            </Style>
+
+            <Style x:Key="ProfileImageStyle" TargetType="Image">
+                <Setter Property="WidthRequest" Value="40" />
+                <Setter Property="HeightRequest" Value="40" />
+                <Setter Property="Aspect" Value="AspectFill" />
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <ContentPage.Content>
         <Grid RowDefinitions="*,Auto">
             <!-- Lista wiadomości -->
             <CollectionView x:Name="MessagesList" ItemsSource="{Binding Messages}" Grid.Row="0" BackgroundColor="#f5f5f5">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <StackLayout Padding="10">
-                            <Frame HasShadow="False" Padding="10" CornerRadius="10"
-                                   BackgroundColor="{Binding BackgroundColor}" HorizontalOptions="{Binding Alignment}">
-                                <Label Text="{Binding Text}" TextColor="White" FontSize="Small" />
+                        <StackLayout Padding="10" Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                            <!-- Ikona użytkownika po lewej stronie -->
+                            <Frame BorderColor="Gray" BackgroundColor="Transparent" 
+                                   Padding="0" CornerRadius="20" WidthRequest="40" HeightRequest="40">
+                                <Image Source="{Binding User}" Style="{StaticResource ProfileImageStyle}" />
+                            </Frame>
+
+                            <!-- Wiadomość -->
+                            <Frame Style="{StaticResource MessageFrameStyle}" 
+                                   BackgroundColor="{Binding BackgroundColor}"
+                                   HorizontalOptions="Start" 
+                                   VerticalOptions="Start">
+                                <Label Text="{Binding Text}" Style="{StaticResource MessageLabelStyle}" />
                             </Frame>
                         </StackLayout>
                     </DataTemplate>
@@ -20,8 +62,21 @@
 
             <!-- Pole do wpisywania wiadomości -->
             <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="1" BackgroundColor="White">
-                <Entry x:Name="MessageEntry" Placeholder="Napisz wiadomość..." HorizontalOptions="FillAndExpand" />
-                <Button Text="Wyślij" Clicked="OnSendMessage" />
+                <Entry x:Name="MessageEntry" 
+                       Placeholder="Napisz wiadomość..." 
+                       PlaceholderColor="Black" 
+                       HorizontalOptions="FillAndExpand" 
+                       BackgroundColor="{StaticResource EntryBackgroundColor}" 
+                       TextColor="Black" 
+                       HeightRequest="45"/>
+                <Button Text="➜"
+                        FontSize="20"
+                        Clicked="OnSendMessage" 
+                        BackgroundColor="#F4A300" 
+                        TextColor="Black" 
+                        Padding="10,5" 
+                        CornerRadius="60"
+                        WidthRequest="60"/>
             </StackLayout>
         </Grid>
     </ContentPage.Content>

@@ -5,24 +5,63 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="flashker.Views.LoginPage"
-             Shell.NavBarIsVisible="False">
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#F8F8F8">
 
     <ContentPage.Content>
-        <StackLayout Spacing="10" Padding="15">
-            <Label Text="Login:" FontSize="Medium" TextColor="Black" />
+        <StackLayout Spacing="20" Padding="15" VerticalOptions="CenterAndExpand">
 
-            <Frame BorderColor="Gray" CornerRadius="5" Padding="10">
-                <Entry Text="{Binding Text, Mode=TwoWay}" FontSize="Medium" TextColor="Black" Placeholder="Email" />
+            <!-- Tytuł strony -->
+            <Label Text="Logowanie" 
+                   FontSize="32" 
+                   FontAttributes="Bold" 
+                   TextColor="#333333" 
+                   HorizontalOptions="Center" />
+
+            <!-- Pole do wpisania Login -->
+            <Frame BorderColor="#dba561" BackgroundColor="White" CornerRadius="10" Padding="10" HasShadow="True">
+                <Entry Text="{Binding Text, Mode=TwoWay}" 
+                       FontSize="Medium" 
+                       TextColor="Black" 
+                       Placeholder="Email" 
+                       PlaceholderColor="#d0d0d0" />
             </Frame>
 
-            <Label Text="Hasło:" FontSize="Medium" TextColor="Black" />
-
-            <Frame BorderColor="Gray" CornerRadius="5" Padding="10">
-                <Editor Text="{Binding Description, Mode=TwoWay}" AutoSize="TextChanges" FontSize="Medium" TextColor="Black" Placeholder="Hasło" />
+            <!-- Pole do wpisania Hasła -->
+            <Frame BorderColor="#dba561" BackgroundColor="White" CornerRadius="10" Padding="10" HasShadow="True">
+                <Editor Text="{Binding Description, Mode=TwoWay}" 
+                        AutoSize="TextChanges" 
+                        FontSize="Medium" 
+                        TextColor="Black" 
+                        Placeholder="Hasło" 
+                        PlaceholderColor="#d0d0d0" />
             </Frame>
 
-            <StackLayout Orientation="Horizontal" Margin="0,10,0,0">
-                <Button Text="Zaloguj się" Clicked="OnLoginButtonClicked" Command="{Binding LoginCommand}" HorizontalOptions="FillAndExpand" BackgroundColor="#dba561" TextColor="White" />
+            <!-- Przycisk Zaloguj się -->
+            <Button Text="Zaloguj się" 
+                    Command="{Binding LoginCommand}" 
+                    HorizontalOptions="FillAndExpand" 
+                    BackgroundColor="#dba561" 
+                    TextColor="White" 
+                    Padding="15"
+                    CornerRadius="30"
+                    HeightRequest="50"
+                    FontSize="Medium"
+                    Margin="0,20,0,0" />
+
+            <!-- Dodatkowe opcje, jak np. link do rejestracji -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="Nie masz konta?" 
+                       FontSize="Small" 
+                       TextColor="#666666" />
+                <Label Text=" Zarejestruj się"
+                   FontSize="Small" 
+                   TextColor="#dba561">
+                    <Label.GestureRecognizers>
+                        <!-- Gesture recognizer przypisany do RegisterCommand -->
+                        <TapGestureRecognizer Command="{Binding RegisterCommand}" />
+                    </Label.GestureRecognizers>
+                </Label>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
