@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace flashker.Views
@@ -13,8 +14,44 @@ namespace flashker.Views
         {
             InitializeComponent();
             LoadSettings();
+
+            // Uruchom odczyt danych z żyroskopu
+            StartGyroscope();
         }
 
+        private void StartGyroscope()
+        {
+            try
+            {
+                if (Gyroscope.IsMonitoring)
+                    return;
+
+                Gyroscope.ReadingChanged += OnGyroscopeReadingChanged;
+                Gyroscope.Start(SensorSpeed.UI);
+            }
+            catch (FeatureNotSupportedException)
+            {
+                GyroscopeDataLabel.Text = "Żyroskop nie jest obsługiwany na tym urządzeniu.";
+            }
+        }
+
+        private void OnGyroscopeReadingChanged(object sender, GyroscopeChangedEventArgs e)
+        {
+            var data = e.Reading;
+            GyroscopeDataLabel.Text = $"X: {data.AngularVelocity.X:F2}, Y: {data.AngularVelocity.Y:F2}, Z: {data.AngularVelocity.Z:F2}";
+        }
+
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+
+            // Zatrzymaj odczyt danych z żyroskopu, gdy strona jest zamykana
+            if (Gyroscope.IsMonitoring)
+            {
+                Gyroscope.ReadingChanged -= OnGyroscopeReadingChanged;
+                Gyroscope.Stop();
+            }
+        }
 
         private void LoadSettings()
         {
