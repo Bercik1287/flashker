@@ -1,0 +1,102 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="flashker.Views.ProfilePage"
+             Title="Profil Użytkownika"
+             BackgroundColor="#f4f4f4">
+
+    <ContentPage.Content>
+        <StackLayout Padding="0" Spacing="0">
+            <!-- Sekcja z obrazem tła, zdjęciem profilowym i nazwą użytkownika -->
+            <Grid HeightRequest="250">
+                <!-- Tło tylko dla sekcji -->
+                <Image Source="avatar1.png"
+                       Opacity="0.3"
+                       Aspect="AspectFill"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="FillAndExpand" />
+
+                <!-- Zawartość sekcji -->
+                <StackLayout Padding="20" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+                    <!-- Zdjęcie profilowe -->
+                    <Frame WidthRequest="120"
+                           HeightRequest="120"
+                           CornerRadius="60"
+                           BorderColor="White"
+                           HasShadow="True"
+                           Padding="0"
+                           HorizontalOptions="Center"
+                           BackgroundColor="White">
+                        <Image Source="avatar3.png"
+                               Aspect="AspectFill"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="FillAndExpand" />
+                    </Frame>
+
+                    <!-- Nazwa użytkownika -->
+                    <Label Text="Nasus Farmer"
+                           FontSize="26"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           TextColor="Black"
+                           Margin="0,10,0,0" />
+                        
+                </StackLayout>
+                <BoxView HeightRequest="2" 
+                 Color="black" 
+                 HorizontalOptions="FillAndExpand" 
+                 VerticalOptions="End" />
+            </Grid>
+
+            <!-- Przyciski do akcji -->
+            <StackLayout Padding="20" Spacing="10">
+                <Button Text="Edytuj Profil"
+                        FontAttributes="Bold"
+                        BackgroundColor="#dba561"
+                        TextColor="White"
+                        WidthRequest="150"
+                        HeightRequest="70"
+                        BorderRadius="25"
+                        HorizontalOptions="Center"
+                        FontSize="Medium" />
+            </StackLayout>
+
+            <!-- Informacje użytkownika -->
+            <StackLayout Padding="15" Spacing="15" BackgroundColor="White" Margin="15,0">
+                <Label Text="Informacje kontaktowe"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       TextColor="#333333" />
+
+                <!-- Email -->
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Label Text="Email:" WidthRequest="100" FontAttributes="Bold" TextColor="#dba561" />
+                    <Label Text="nasus.shurima@summonersrift.com" TextColor="#333333" />
+                </StackLayout>
+
+                <!-- Telefon -->
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Label Text="Telefon:" WidthRequest="100" FontAttributes="Bold" TextColor="#dba561" />
+                    <Label Text="+48 123 456 789" TextColor="#333333" />
+                </StackLayout>
+
+                <!-- Lokalizacja -->
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Label Text="Lokalizacja:" WidthRequest="100" FontAttributes="Bold" TextColor="#dba561" />
+                    <Label Text="Top Lane, Summoners Rift" TextColor="#333333" />
+                </StackLayout>
+            </StackLayout>
+
+            <!-- Opis użytkownika -->
+            <StackLayout Padding="15" Spacing="10" BackgroundColor="White" Margin="15,10">
+                <Label Text="O mnie"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       TextColor="#333333" />
+                <Label Text="I myyyyk toporkiem w canona."
+                       FontSize="Small"
+                       TextColor="#777777"
+                       LineBreakMode="WordWrap" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

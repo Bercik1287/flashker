@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="flashker.Views.AboutPage"
+             xmlns:vm="clr-namespace:flashker.ViewModels"
+             Title="{Binding Title}">
+
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+        <!-- Binding context for view model -->
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="TextColor">Black</Color>
+            <Color x:Key="BoxBackground">Black</Color>
+            <Color x:Key="BoxTextColor">White</Color>
+            <Color x:Key="OuterBoxBackground">Wheat</Color>
+
+            <!-- Style for Black Box -->
+            <Style x:Key="BlackBoxStyle" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="{StaticResource BoxBackground}" />
+                <Setter Property="CornerRadius" Value="15" />
+                <Setter Property="Padding" Value="15" />
+                <Setter Property="HasShadow" Value="False" />
+            </Style>
+
+            <!-- Style for Outer Wheat Box with Shadow -->
+            <Style x:Key="OuterBoxStyle" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="{StaticResource OuterBoxBackground}" />
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="Padding" Value="20" />
+                <Setter Property="HasShadow" Value="True" />
+            </Style>
+
+            <!-- Style for Text Inside Black Box -->
+            <Style x:Key="BoxTextStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource BoxTextColor}" />
+                <Setter Property="FontSize" Value="Medium" />
+            </Style>
+
+            <!-- Style for Button with Gradient Background -->
+            <Style x:Key="DecoratedButtonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Black" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="Padding" Value="10,5" />
+                <Setter Property="FontSize" Value="15" />
+            </Style>
+
+            <!-- Decorative Style for Header Section -->
+            <Style x:Key="HeaderStyle" TargetType="StackLayout">
+                <Setter Property="BackgroundColor" Value="Wheat"/>
+                <Setter Property="Padding" Value="20"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Orientation" Value="Horizontal"/>
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <!-- Background Image -->
+        <Image Source="beer-texture.jpg" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Logo Section with Decoration -->
+        <StackLayout
+            Grid.Row="0" Padding="20" HorizontalOptions="Center" VerticalOptions="Center">
+            <Image Source="xamarin_logo.png" HeightRequest="150" WidthRequest="300" />
+        </StackLayout>
+
+        <!-- Content Section with Additional Decoration -->
+        <ScrollView Grid.Row="1" Padding="20">
+            <StackLayout Spacing="20">
+                <!-- Outer Wheat Box with Shadow -->
+                <Frame Style="{StaticResource OuterBoxStyle}">
+                    <StackLayout Spacing="15">
+
+                        <!-- About Section -->
+                        <Frame Style="{StaticResource BlackBoxStyle}">
+                            <StackLayout>
+                                <Label Style="{StaticResource BoxTextStyle}"
+                                       Text="O Aplikacji:" FontAttributes="Bold" FontSize="Title" />
+                                <Label Style="{StaticResource BoxTextStyle}" Text="Nasza aplikacja jest projektem służącym do..." />
+                            </StackLayout>
+                        </Frame>
+
+                        <!-- Features Section -->
+                        <Frame Style="{StaticResource BlackBoxStyle}">
+                            <StackLayout>
+                                <Label Style="{StaticResource BoxTextStyle}" 
+                                       Text="Wprowadzone zmiany:" FontAttributes="Bold" FontSize="Title" />
+                                <Label Style="{StaticResource BoxTextStyle}" Text="- Kiedyś coś tu będzie :3" />
+                                <Label Style="{StaticResource BoxTextStyle}" Text="- Data: 10.12.2024r." />
+                            </StackLayout>
+                        </Frame>
+
+                    </StackLayout>
+                </Frame>
+
+                <!-- Learn More Button with additional decoration -->
+                <Button Text="Dowiedz się wiecej o nas !!!" 
+                        Command="{Binding OpenWebCommand}" 
+                        Style="{StaticResource DecoratedButtonStyle}" />
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>
