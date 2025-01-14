@@ -77,7 +77,9 @@
                         Padding="10,5" 
                         CornerRadius="60"
                         WidthRequest="60"/>
+                <Button Text="📷" Clicked="OnTakePhoto" />
             </StackLayout>
+
         </Grid>
     </ContentPage.Content>
 </ContentPage>
