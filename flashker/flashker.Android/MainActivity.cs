@@ -1,50 +1,32 @@
 ﻿using System;
-
 using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
 using Android.Hardware;
 using Xamarin.Essentials;
-
-using flashker;
+using Xamarin.Forms;
 
 namespace flashker.Droid
 {
-    [Activity(Label = "flashker", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize )]
-    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
+    [Activity(Label = "flashker", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize)]
+    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity, ISensorEventListener
     {
+        private SensorManager sensorManager;
+        private Sensor lightSensor;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
+            // Inicjalizacja komponentów Xamarin
             Xamarin.FormsMaps.Init(this, savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            LoadApplication(new App());
-        }
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
-        {
-            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 
-            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-        }
-    }
-}
-namespace BrightnessAdjuster
-{
-    [Activity(Label = "BrightnessAdjuster", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity, ISensorEventListener
-    {
-        SensorManager sensorManager;
-        Sensor lightSensor;
-
-        protected override void OnCreate(Bundle savedInstanceState)
-        {
-            base.OnCreate(savedInstanceState);
-            global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
 
+            // Inicjalizacja czujnika światła
             sensorManager = (SensorManager)GetSystemService(SensorService);
             lightSensor = sensorManager.GetDefaultSensor(SensorType.Light);
         }
@@ -52,7 +34,8 @@ namespace BrightnessAdjuster
         protected override void OnResume()
         {
             base.OnResume();
-            sensorManager.RegisterListener(this, lightSensor, SensorDelay.Normal);
+            if (lightSensor != null)
+                sensorManager.RegisterListener(this, lightSensor, SensorDelay.Normal);
         }
 
         protected override void OnPause()
@@ -63,7 +46,7 @@ namespace BrightnessAdjuster
 
         public void OnAccuracyChanged(Sensor sensor, [GeneratedEnum] SensorStatus accuracy)
         {
-            // Nie używane
+            // Nie używane w tym przypadku
         }
 
         public void OnSensorChanged(SensorEvent e)
@@ -79,8 +62,15 @@ namespace BrightnessAdjuster
         {
             var window = Window;
             var attributes = window.Attributes;
-            attributes.ScreenBrightness = lightLevel / 100f; // Normalizacja wartości jasności
+            attributes.ScreenBrightness = Math.Min(lightLevel / 100f, 1f); // Normalizacja wartości jasności
             window.Attributes = attributes;
         }
+
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)
+        {
+            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
+
     }
 }
